@@ -18,5 +18,6 @@ Navigate to http://localhost:8080/form
 
 Navigate to http://localhost:8080/form2
 
-> **Note**
-> The way of the form2 is not documented. I don't know it is an official feature.
+> **Warning**
+> The way of the form2 is not documented, so it is not officially supported,
+> and it is buggy. Do not use.

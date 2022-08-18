@@ -35,7 +35,8 @@ class Form extends BaseController
     /**
      * The form using redirect and withInput()
      *
-     * Note: This way is not documented. I don't know it is an official feature.
+     * Warning: This way is not documented, so it is not officially supported,
+     *          and it is buggy. Do not use.
      *
      * @return \CodeIgniter\HTTP\RedirectResponse|string
      */
