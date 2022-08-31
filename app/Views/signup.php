@@ -4,7 +4,7 @@
 </head>
 <body>
 
-    <?= $validation->listErrors() ?>
+    <?= validation_list_errors() ?>
 
     <?= form_open('form') ?>
 

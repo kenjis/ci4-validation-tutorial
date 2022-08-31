@@ -4,11 +4,7 @@
 </head>
 <body>
 
-    <!--
-        This way is not documented, so it is not officially supported,
-        and it is buggy. Do not use.
-    -->
-    <?= service('Validation')->listErrors() ?>
+    <?= validation_list_errors() ?>
 
     <?= form_open('form2') ?>
 
