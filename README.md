@@ -19,5 +19,5 @@ Navigate to http://localhost:8080/form
 Navigate to http://localhost:8080/form2
 
 > **Warning**
-> The way of the form2 is not documented, so it is not officially supported,
-> and it is buggy. Do not use.
+> The way of the form2 is not documented, and it will be removed as a bug.
+> Never use it.
