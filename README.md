@@ -25,12 +25,22 @@ $ php spark serve
 
 ### Form1
 
-This is a simple form.
-
 Navigate to http://localhost:8080/form1
+
+This is a simple form:
+
+- (`GET /form1`) Display the form1
+- Submit (`POST /form1`)
+- Validation passes → Display success
+- Validation fails → Display form1 with Errors
 
 ### Form2
 
-This form is using redirect and withInput().
-
 Navigate to http://localhost:8080/form2
+
+This form is using redirect and withInput():
+
+- (`GET /form2`) Display the form2
+- Submit (`POST /form2`)
+- Validation passes → Display success
+- Validation fails → Redirect back → (`GET /form2`) Display form2 with Errors
