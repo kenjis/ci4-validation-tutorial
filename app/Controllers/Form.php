@@ -6,7 +6,12 @@ class Form extends BaseController
 {
     protected $helpers = ['form'];
 
-    public function index()
+    /**
+     * The form
+     *
+     * @return string
+     */
+    public function form1()
     {
         if (strtolower($this->request->getMethod()) !== 'post') {
             return view('form2');

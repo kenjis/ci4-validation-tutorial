@@ -18,6 +18,6 @@ $ php spark serve
 
 ## Forms
 
-Navigate to http://localhost:8080/form
+Navigate to http://localhost:8080/form1
 
 Navigate to http://localhost:8080/form2
