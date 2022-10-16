@@ -1,5 +1,10 @@
 # CodeIgniter 4 Validation Tutorial
 
+Since v4.3.0, new Form helper functions `validation_errors()`, `validation_list_errors()`
+and `validation_show_error()` to display Validation Errors are added.
+
+You can use the same View file for a simple form and a form with redirect.
+
 ## Requirement
 
 - CodeIgniter 4.3
