@@ -7,7 +7,7 @@
 ## Setup
 
 ```console
-$ git clone git@github.com:kenjis/ci4-validation-tutorial.git
+$ git clone https://github.com/kenjis/ci4-validation-tutorial.git
 $ cd ci4-validation-tutorial/
 $ composer update
 ```
