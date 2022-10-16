@@ -14,7 +14,7 @@ You can use the same View form file for a simple form and a form with redirect.
 ```console
 $ git clone https://github.com/kenjis/ci4-validation-tutorial.git
 $ cd ci4-validation-tutorial/
-$ composer update
+$ composer install
 ```
 
 ```console
