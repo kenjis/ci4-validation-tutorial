@@ -14,7 +14,7 @@ class Form extends BaseController
     public function form1()
     {
         if (strtolower($this->request->getMethod()) !== 'post') {
-            return view('form2');
+            return view('form1');
         }
 
         $rules = [
@@ -25,7 +25,7 @@ class Form extends BaseController
         ];
 
         if (! $this->validate($rules)) {
-            return view('form2');
+            return view('form1');
         }
 
         return view('success');
