@@ -18,6 +18,14 @@ $ php spark serve
 
 ## Forms
 
+### Form1
+
+This is a simple form.
+
 Navigate to http://localhost:8080/form1
+
+### Form2
+
+This form is using redirect and withInput().
 
 Navigate to http://localhost:8080/form2
