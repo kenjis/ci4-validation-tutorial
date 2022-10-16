@@ -3,7 +3,7 @@
 Since v4.3.0, new Form helper functions `validation_errors()`, `validation_list_errors()`
 and `validation_show_error()` to display Validation Errors are added.
 
-You can use the same View file for a simple form and a form with redirect.
+You can use the same View form file for a simple form and a form with redirect.
 
 ## Requirement
 
@@ -23,24 +23,22 @@ $ php spark serve
 
 ## Forms
 
-### Form1
-
-Navigate to http://localhost:8080/form1
+### [Form1](https://github.com/kenjis/ci4-validation-tutorial/blob/777c4f9ebf93388a90a344617f1dce5c32458058/app/Controllers/Form.php#L14)
 
 This is a simple form:
 
-- (`GET /form1`) Display the form1
+- Navigate to http://localhost:8080/form1 (`GET /form1`)
+  - Display the [form1](https://github.com/kenjis/ci4-validation-tutorial/blob/main/app/Views/form1.php)
 - Submit (`POST /form1`)
-- Validation passes → Display success
-- Validation fails → Display form1 with Errors
+  - Validation passes → Display [success](https://github.com/kenjis/ci4-validation-tutorial/blob/main/app/Views/success.php)
+  - Validation fails → Display [form1](https://github.com/kenjis/ci4-validation-tutorial/blob/main/app/Views/form1.php) with Errors
 
-### Form2
-
-Navigate to http://localhost:8080/form2
+### [Form2](https://github.com/kenjis/ci4-validation-tutorial/blob/777c4f9ebf93388a90a344617f1dce5c32458058/app/Controllers/Form.php#L39)
 
 This form is using redirect and withInput():
 
-- (`GET /form2`) Display the form2
+- Navigate to http://localhost:8080/form2 (`GET /form2`)
+  - Display the [form2](https://github.com/kenjis/ci4-validation-tutorial/blob/main/app/Views/form2.php)
 - Submit (`POST /form2`)
-- Validation passes → Display success
-- Validation fails → Redirect back → (`GET /form2`) Display form2 with Errors
+  - Validation passes → Display [success](https://github.com/kenjis/ci4-validation-tutorial/blob/main/app/Views/success.php)
+  - Validation fails → Redirect back → (`GET /form2`) Display [form2](https://github.com/kenjis/ci4-validation-tutorial/blob/main/app/Views/form2.php) with Errors
