@@ -13,7 +13,7 @@ class Form extends BaseController
      */
     public function form1()
     {
-        if (strtolower($this->request->getMethod()) !== 'post') {
+        if (! $this->request->is('post')) {
             return view('form1');
         }
 
@@ -38,7 +38,7 @@ class Form extends BaseController
      */
     public function form2()
     {
-        if (strtolower($this->request->getMethod()) !== 'post') {
+        if (! $this->request->is('post')) {
             return view('form2');
         }
 
