@@ -11,7 +11,7 @@ $finder = Finder::create()
         __DIR__ . '/tests/',
     ])
     ->exclude('build')
-    ->exclude('Views/errors')
+    ->exclude('Views')
     ->append([__FILE__]);
 
 $overrides = [];
