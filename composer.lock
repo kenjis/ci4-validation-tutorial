@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6f8ccc59e627a5f282fcb640bc424bc5",
+    "content-hash": "b55ee82949ed52b1fd61e121a376b862",
     "packages": [
         {
-            "name": "codeigniter4/codeigniter4",
+            "name": "codeigniter4/framework",
             "version": "v4.3.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/codeigniter4/CodeIgniter4.git",
-                "reference": "cc14fddbd0cecd726b08167b7abec1ead06693c3"
+                "url": "https://github.com/codeigniter4/framework.git",
+                "reference": "b1e5c64ce50757397ff77dd277e3273567df5b4b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/codeigniter4/CodeIgniter4/zipball/cc14fddbd0cecd726b08167b7abec1ead06693c3",
-                "reference": "cc14fddbd0cecd726b08167b7abec1ead06693c3",
+                "url": "https://api.github.com/repos/codeigniter4/framework/zipball/b1e5c64ce50757397ff77dd277e3273567df5b4b",
+                "reference": "b1e5c64ce50757397ff77dd277e3273567df5b4b",
                 "shasum": ""
             },
             "require": {
@@ -35,14 +35,8 @@
                 "kint-php/kint": "^5.0.1",
                 "mikey179/vfsstream": "^1.6",
                 "nexusphp/cs-config": "^3.6",
-                "nexusphp/tachycardia": "^1.0",
-                "php-coveralls/php-coveralls": "^2.5",
-                "phpstan/phpstan": "^1.7.1",
-                "phpunit/phpcov": "^8.2",
                 "phpunit/phpunit": "^9.1",
-                "predis/predis": "^1.1 || ^2.0",
-                "rector/rector": "0.15.5",
-                "vimeo/psalm": "^5.0"
+                "predis/predis": "^1.1 || ^2.0"
             },
             "suggest": {
                 "ext-curl": "If you use CURLRequest class",
@@ -65,11 +59,6 @@
                 "ext-xdebug": "If you use CIUnitTestCase::assertHeaderEmitted()"
             },
             "type": "project",
-            "extra": {
-                "branch-alias": {
-                    "dev-develop": "4.x-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "CodeIgniter\\": "system/"
@@ -78,41 +67,7 @@
                     "**/Database/Migrations/**"
                 ]
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "CodeIgniter\\": "tests/system/",
-                    "Utils\\": "utils/"
-                }
-            },
-            "scripts": {
-                "post-update-cmd": [
-                    "CodeIgniter\\ComposerScripts::postUpdate",
-                    "bash -c \"if [ -f admin/setup.sh ]; then bash admin/setup.sh; fi\""
-                ],
-                "analyze": [
-                    "bash -c \"XDEBUG_MODE=off phpstan analyse\"",
-                    "rector process --dry-run"
-                ],
-                "sa": [
-                    "@analyze"
-                ],
-                "test": [
-                    "phpunit"
-                ],
-                "cs": [
-                    "php-cs-fixer fix --ansi --verbose --dry-run --diff --config=.php-cs-fixer.user-guide.php",
-                    "php-cs-fixer fix --ansi --verbose --dry-run --diff --config=.php-cs-fixer.no-header.php",
-                    "php-cs-fixer fix --ansi --verbose --dry-run --diff"
-                ],
-                "cs-fix": [
-                    "php-cs-fixer fix --ansi --verbose --diff --config=.php-cs-fixer.user-guide.php",
-                    "php-cs-fixer fix --ansi --verbose --diff --config=.php-cs-fixer.no-header.php",
-                    "php-cs-fixer fix --ansi --verbose --diff"
-                ],
-                "style": [
-                    "@cs-fix"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -120,11 +75,10 @@
             "homepage": "https://codeigniter.com",
             "support": {
                 "forum": "https://forum.codeigniter.com/",
-                "source": "https://github.com/codeigniter4/CodeIgniter4",
                 "slack": "https://codeigniterchat.slack.com",
-                "issues": "https://github.com/codeigniter4/CodeIgniter4/issues"
+                "source": "https://github.com/codeigniter4/CodeIgniter4"
             },
-            "time": "2023-01-14T11:29:50+00:00"
+            "time": "2023-01-14T11:32:47+00:00"
         },
         {
             "name": "laminas/laminas-escaper",
@@ -5950,7 +5904,7 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "stability-flags": {
         "roave/security-advisories": 20
     },
