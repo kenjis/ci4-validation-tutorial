@@ -28,7 +28,9 @@ class Form extends BaseController
             return view('form1');
         }
 
-        return view('success');
+        $data = $this->request->getPost(array_keys($rules));
+
+        return view('success', $data);
     }
 
     /**
@@ -53,6 +55,8 @@ class Form extends BaseController
             return redirect()->back()->withInput();
         }
 
-        return view('success');
+        $data = $this->request->getPost(array_keys($rules));
+
+        return view('success', $data);
     }
 }
