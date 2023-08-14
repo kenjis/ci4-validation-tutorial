@@ -27,7 +27,7 @@ $ php spark serve
 
 ## Forms
 
-### [Form1](https://github.com/kenjis/ci4-validation-tutorial/blob/777c4f9ebf93388a90a344617f1dce5c32458058/app/Controllers/Form.php#L14)
+### [Form1](https://github.com/kenjis/ci4-validation-tutorial/blob/0db0bda900d2f28cdff9ef21d7c9dcaad6705927/app/Controllers/Form.php#L14)
 
 This is a simple form:
 
@@ -37,7 +37,7 @@ This is a simple form:
   - Validation passes → Display [success](https://github.com/kenjis/ci4-validation-tutorial/blob/main/app/Views/success.php)
   - Validation fails → Display [form1](https://github.com/kenjis/ci4-validation-tutorial/blob/main/app/Views/form1.php) with Errors
 
-### [Form2](https://github.com/kenjis/ci4-validation-tutorial/blob/777c4f9ebf93388a90a344617f1dce5c32458058/app/Controllers/Form.php#L39)
+### [Form2](https://github.com/kenjis/ci4-validation-tutorial/blob/0db0bda900d2f28cdff9ef21d7c9dcaad6705927/app/Controllers/Form.php#L50)
 
 This form is using redirect and withInput():
 
