@@ -14,7 +14,8 @@
         "mikey179/vfsstream": "^1.6",
         "phpunit/phpunit": "^9.1",
         "roave/security-advisories": "dev-latest",
-        "codeigniter4/devkit": "^1.0"
+        "codeigniter4/devkit": "^1.0",
+        "tatter/patches": "^2.0"
     },
     "suggest": {
         "ext-fileinfo": "Improves mime type detection for files"
