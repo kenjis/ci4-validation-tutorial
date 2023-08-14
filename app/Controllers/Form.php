@@ -18,11 +18,11 @@ class Form extends BaseController
         }
 
         $rules = [
-            'username' => 'required',
-            'password' => 'required|min_length[10]',
-            'passconf' => 'required|matches[password]',
-            'email'    => 'required|valid_email',
-            'fruit.*'  => 'in_list[apple,grape]',
+            'username' => 'required|max_length[64]',
+            'password' => 'required|max_length[255]|min_length[10]',
+            'passconf' => 'required|max_length[255]|matches[password]',
+            'email'    => 'required|max_length[254]|valid_email',
+            'fruit.*'  => 'max_length[5]|in_list[apple,grape]',
         ];
 
         if (! $this->validate($rules)) {
@@ -54,11 +54,11 @@ class Form extends BaseController
         }
 
         $rules = [
-            'username' => 'required',
-            'password' => 'required|min_length[10]',
-            'passconf' => 'required|matches[password]',
-            'email'    => 'required|valid_email',
-            'fruit.*'  => 'in_list[apple,grape]',
+            'username' => 'required|max_length[64]',
+            'password' => 'required|max_length[255]|min_length[10]',
+            'passconf' => 'required|max_length[255]|matches[password]',
+            'email'    => 'required|max_length[254]|valid_email',
+            'fruit.*'  => 'max_length[5]|in_list[apple,grape]',
         ];
 
         if (! $this->validate($rules)) {
