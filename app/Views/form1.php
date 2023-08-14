@@ -20,6 +20,10 @@
         <h5>Email Address</h5>
         <input type="text" name="email" value="<?= set_value('email') ?>" size="50">
 
+        <h5>What do you like?</h5>
+        <input type="checkbox" name="fruit[]" value="apple" <?= set_checkbox('fruit', 'apple', true) ?>>apple
+        <input type="checkbox" name="fruit[]" value="grape" <?= set_checkbox('fruit', 'grape') ?>>grape
+
         <div><input type="submit" value="Submit"></div>
 
     <?= form_close() ?>

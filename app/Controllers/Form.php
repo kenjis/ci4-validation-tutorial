@@ -22,15 +22,24 @@ class Form extends BaseController
             'password' => 'required|min_length[10]',
             'passconf' => 'required|matches[password]',
             'email'    => 'required|valid_email',
+            'fruit.*'  => 'in_list[apple,grape]',
         ];
 
         if (! $this->validate($rules)) {
             return view('form1');
         }
 
-        $data = $this->request->getPost(array_keys($rules));
+        $data = $this->request->getPost($this->getDataKeys($rules));
 
         return view('success', $data);
+    }
+
+    private function getDataKeys(array $rules): array
+    {
+        unset($rules['fruit.*']);
+        $rules['fruit'] = '';
+
+        return array_keys($rules);
     }
 
     /**
@@ -49,13 +58,14 @@ class Form extends BaseController
             'password' => 'required|min_length[10]',
             'passconf' => 'required|matches[password]',
             'email'    => 'required|valid_email',
+            'fruit.*'  => 'in_list[apple,grape]',
         ];
 
         if (! $this->validate($rules)) {
             return redirect()->back()->withInput();
         }
 
-        $data = $this->request->getPost(array_keys($rules));
+        $data = $this->request->getPost($this->getDataKeys($rules));
 
         return view('success', $data);
     }

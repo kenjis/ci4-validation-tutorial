@@ -10,6 +10,7 @@
     Username: <?= $username ?><br>
     Password: <?= $password ?><br>
     Email: <?= $email ?><br>
+    Fruit: <?= implode(', ', $fruit)?><br>
     </p>
 
     <p><?= anchor('form1', 'Go to form1') ?></p>
