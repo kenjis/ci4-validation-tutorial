@@ -11,7 +11,7 @@ You can use the same View form file for a simple form and a form with redirect.
 ## Requirement
 
 - PHP 7.4 or later
-- CodeIgniter 4.3
+- CodeIgniter 4.4
 
 ## Setup
 
