@@ -29,9 +29,9 @@ class Form extends BaseController
             return view('form1');
         }
 
-        $data = $this->request->getPost($this->getDataKeys($rules));
+        $validData = $this->validator->getValidated();
 
-        return view('success', $data);
+        return view('success', $validData);
     }
 
     private function getDataKeys(array $rules): array
@@ -65,8 +65,8 @@ class Form extends BaseController
             return redirect()->back()->withInput();
         }
 
-        $data = $this->request->getPost($this->getDataKeys($rules));
+        $validData = $this->validator->getValidated();
 
-        return view('success', $data);
+        return view('success', $validData);
     }
 }
