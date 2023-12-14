@@ -25,7 +25,9 @@ class Form extends BaseController
             'fruit.*'  => 'max_length[5]|in_list[apple,grape]',
         ];
 
-        if (! $this->validate($rules)) {
+        $data = $this->request->getPost($this->getDataKeys($rules));
+
+        if (! $this->validateData($data, $rules)) {
             return view('form1');
         }
 
@@ -61,7 +63,9 @@ class Form extends BaseController
             'fruit.*'  => 'max_length[5]|in_list[apple,grape]',
         ];
 
-        if (! $this->validate($rules)) {
+        $data = $this->request->getPost($this->getDataKeys($rules));
+
+        if (! $this->validateData($data, $rules)) {
             return redirect()->back()->withInput();
         }
 
